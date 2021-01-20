@@ -4,6 +4,8 @@
 // So, 0 will give (0-1)*-1 = 1
 // and 1 will give (1-1)*-1 = 0
 
+// The other method is to use XOR(^) operator. 1^1 = 0 and 1^0 = 1
+ 
 func flipAndInvertImage(A [][]int) [][]int {
 	var result [][]int
 	var temp []int
