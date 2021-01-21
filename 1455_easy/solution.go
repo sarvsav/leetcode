@@ -2,10 +2,9 @@
 import "strings"
 
 func isPrefixOfWord(sentence string, searchWord string) int {
-	index := 1
-	for _, word := range strings.Split(sentence, " ") {
+	for index, word := range strings.Split(sentence, " ") {
 		if len(word) >= len(searchWord) && word[0:len(searchWord)] == searchWord {
-			return index
+			return index+1
 		}
 		index++
 	}
